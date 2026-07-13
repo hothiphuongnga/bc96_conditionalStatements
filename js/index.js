@@ -218,3 +218,18 @@ document.querySelector("#doanhSo").oninput = function(){
     domKq.innerText = kq
 }
 
+// ===== Kiểm tra số chẵn lẻ ====
+document.querySelector("#soChanLe").oninput = function(){
+    // lấy ra giá trị của input
+    let so = document.querySelector("#soChanLe").value
+    let kq=""
+    if(Number(so) % 2 == 0){
+        kq = "Số chẵn"
+    }
+    else if(Number(so) % 2 !=0){
+        kq = "Số lẻ"
+    } else{
+        kq = "Không hợp lệ"
+    }
+    document.querySelector("#result4").innerText = kq
+}
