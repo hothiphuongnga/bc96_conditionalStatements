@@ -140,3 +140,34 @@ function tinhTong2(a,b){
 let res = tinhTong2(10,30); 
 
 console.log("👉 res", res);
+
+
+// ==============
+// ÔN TẬP FUNCTION
+// ==============
+// [Hàm không return , không tham số]  function ten_function (){}
+function ontTap_XinChao(){
+  console.log("===== XIN CHAO ========")
+  // hien thi thong tin
+}
+
+// [Hàm không return , có tham số]
+function onTap_XinChaoTen(name){
+  //`
+  console.log(`======== XIN CHAO ${name} =======`)
+  // hien thi/log thong tin  
+}
+// [Hàm có return]
+function onTap_TinhTong(a, b){
+  console.log(a + b) // hien thi ket qua / thong tin
+  return a + b; // trả kết này ra khỏi hàm
+}
+
+
+// Goi Ham
+ontTap_XinChao()
+onTap_XinChaoTen("Nga")
+let className = "BC96"
+onTap_XinChaoTen(className);
+let kqTinhTong = onTap_TinhTong(10, 20) // khai bao bien hung return
+console.log(onTap_TinhTong(10, 20)) // log truc tieo ket qua cua ham
